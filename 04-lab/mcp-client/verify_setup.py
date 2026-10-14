@@ -27,7 +27,8 @@ def check_environment():
         print("   Get key from: https://aistudio.google.com/apikey")
         return False
     
-    print(f"✅ GOOGLE_API_KEY configured ({api_key[:10]}...)")
+    # Do not print any part of the key; this output may be captured in screenshots.
+    print("✅ GOOGLE_API_KEY configured")
     return True
 
 def check_dependencies():
